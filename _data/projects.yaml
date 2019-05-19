@@ -134,6 +134,12 @@
       github: tedivm/tedivms-flask
       icon: fas fa-flask
 
+    - name: Jekyll Portfolio
+      description: The theme behind this very portfolio is available for you to use to build your own portfolio site with Jekyll and Github Pages.
+      github: tedivm/tedivms-flask
+      rubygems: jekyll-theme-portfolio
+      icon: fab fa-github-alt
+
     - name: HeadedHome
       description: Using an IOT Button as a trigger, this Lambda function estimates my time of getting home from work based off of current public transit times and sends a text to both myself and my partner with that ETA.
       github: tedivm/HeadedHome
