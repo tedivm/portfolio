@@ -27,6 +27,12 @@
       homepage: https://www.leagueofautomatednations.com/
       image: loan.png
 
+    - name: GitStars
+      description: "A Github API aimed at Front End use. This API uses extensive caching and authenticated APIs to work around Github API Ratelimiting. It drives the star counts on this very site."
+      github: tedivm/gitstars
+      homepage: https://stars.gitconsensus.com
+      icon: fab fa-github-alt
+
     - name: ec2details
       description: "This service provides an API with metadata (including pricing) for every AWS EC2 instance type.\nIt processes the AWS Bulk API to multiple times a day to always provide the most up to date information."
       github: tedivm/ec2details
