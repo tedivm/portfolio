@@ -142,7 +142,7 @@
 
     - name: Jekyll Portfolio
       description: The theme behind this very portfolio is available for you to use to build your own portfolio site with Jekyll and Github Pages.
-      github: tedivm/tedivms-flask
+      github: tedivm/jekyll-theme-portfolio
       rubygems: jekyll-theme-portfolio
       icon: fab fa-github-alt
 
