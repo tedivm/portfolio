@@ -39,6 +39,12 @@
       homepage: https://tedivm.github.io/ec2details/
       icon: fab fa-aws
 
+    - name: Game of Life
+      description: "A Game of Life implimentation with additional rules and varients that add colors, written in javascript using canvas."
+      github: tedivm/game_of_life_populations
+      homepage: https://life.tedivm.com
+      image: game_of_life.png
+
 
 - name: Libraries
   projects:
