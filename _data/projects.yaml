@@ -45,6 +45,12 @@
       homepage: https://life.tedivm.com
       image: game_of_life.png
 
+    - name: Good Guy Warren
+      description: "An Elizabeth Warren Meme Collection. Memes are built using JS Canvas."
+      github: tedivm/www.goodguywarren.com
+      homepage: https://www.goodguywarren.com
+      image: ggw.png
+
 
 - name: Libraries
   projects:
