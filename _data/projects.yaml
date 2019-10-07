@@ -15,6 +15,13 @@
       image: gitconsensus.png
       homepage: https://www.gitconsensus.com/
 
+    - name: GithubOrganizer
+      description: "GithubOrganizer applies settings to teams, repositories, and issues- automatically protecting branches, applying labels, and assigning issues to projects."
+      github: gitconsensus/GithubOrganizer
+      dockerhub: tedivm/github_organizer_www
+      image: githuborganizer.png
+      homepage: https://organizer.gitconsensus.com/
+
     - name: BadThings Slack Bot
       description: "The <a href=\"https://twitter.com/badthingsdaily\">Bad Things Daily Twitter</a> account provides scenarios for tabletop disaster planning. This application sends random scenarios right to Slack."
       github: tedivm/BadThingsDailyBot
