@@ -148,11 +148,6 @@
 
 - name: Misc
   projects:
-    - name: NLM Scrubber Assist
-      description: The <a href="https://scrubber.nlm.nih.gov/">NLM Scrubber</a> is a package released by the National Library of Medicine to remove PHI from medical documents. This project wraps that in a docker container and provides python and bash libraries.
-      github: radaisystems/nlm-scrubber-docker
-      dockerhub: radaisystems/nlm-scrubber
-      icon: fas fa-file-medical-alt
 
     - name: tedivms-flask
       description: This is my default Flask project template. It contains a complete docker environment, user management system, API system, Celery worker and tasks, and other important modules in addition to a Bootstrap based front end.
@@ -164,6 +159,18 @@
       github: tedivm/jekyll-theme-portfolio
       rubygems: jekyll-theme-portfolio
       icon: fab fa-github-alt
+
+    - name: Slack Proxy
+      description: This simple to deploy application allows developers to send notifications to slack without having to manage webhooks directly themselves.
+      github: tedivm/slack_proxy
+      dockerhub: tedivm/slack_proxy
+      icon: fab fa-slack
+
+    - name: NLM Scrubber Assist
+      description: The <a href="https://scrubber.nlm.nih.gov/">NLM Scrubber</a> is a package released by the National Library of Medicine to remove PHI from medical documents. This project wraps that in a docker container and provides python and bash libraries.
+      github: radaisystems/nlm-scrubber-docker
+      dockerhub: radaisystems/nlm-scrubber
+      icon: fas fa-file-medical-alt
 
     - name: HeadedHome
       description: Using an IOT Button as a trigger, this Lambda function estimates my time of getting home from work based off of current public transit times and sends a text to both myself and my partner with that ETA.
