@@ -46,11 +46,20 @@
       homepage: https://tedivm.github.io/ec2details/
       icon: fab fa-aws
 
+
+- name: Digital Art
+  projects:
     - name: Game of Life
       description: "A Game of Life implimentation with additional rules and varients that add colors, written in javascript using canvas."
       github: tedivm/game_of_life_populations
       homepage: https://life.tedivm.com
       image: game_of_life.png
+
+    - name: Formations
+      description: "An experiment in digital movement."
+      github: tedivm/formations
+      homepage: https://formations.tedivm.com
+      image: formations.png
 
     - name: Good Guy Warren
       description: "An Elizabeth Warren Meme Collection. Memes are built using JS Canvas."
