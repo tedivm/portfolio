@@ -18,6 +18,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-remote-theme # Lets us test remote themes locally.
+  - jekyll-seo-tag
 
 # A list of the pages to display in the navigation bar
 header_pages:
