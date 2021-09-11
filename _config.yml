@@ -11,7 +11,7 @@ github_username:  tedivm
 linkedin_username: roberthafner
 fathom_key: OEFMF
 fathom_domain: fathom.tdvm.net
-
+plausible_domain: projects.tedivm.com
 
 # Build settings
 plugins:
