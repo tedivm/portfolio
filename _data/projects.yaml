@@ -46,6 +46,34 @@
       homepage: https://tedivm.github.io/ec2details/
       icon: fab fa-aws
 
+- name: Multi-Py
+  image: multipy.png
+  description: <a href="https://github.com/multi-py">Multi-Py</a> is a collection of python images with amd64, arm64, and arm v7 support.
+  projects:
+    - name: python-uvicorn
+      description: Multiarchitecture Docker Containers for Python and Uvicorn
+      homepage: https://blog.tedivm.com/open-source/2021/11/multi-py-multiplatform-images-python/
+      github: multi-py/python-uvicorn
+      ghcr: multi-py/python-uvicorn
+
+    - name: python-gunicorn
+      description: Multiarchitecture Docker Containers for Python and Gunicorn
+      homepage: https://blog.tedivm.com/open-source/2021/11/multi-py-multiplatform-images-python/
+      github: multi-py/python-gunicorn
+      ghcr: multi-py/python-gunicorn
+
+    - name: python-gunicorn-uvicorn
+      description: Multiarchitecture Docker Containers for Python using Gunicorn and Uvicorn
+      homepage: https://blog.tedivm.com/open-source/2021/11/multi-py-multiplatform-images-python/
+      github: multi-py/python-gunicorn-uvicorn
+      ghcr: multi-py/python-gunicorn-uvicorn
+
+    - name: python-oso
+      description: Multiarchitecture Docker Containers for Python and OSO
+      homepage: https://blog.tedivm.com/open-source/2021/11/multi-py-multiplatform-images-python/
+      github: multi-py/python-oso
+      ghcr: multi-py/python-oso
+
 
 - name: Digital Art
   projects:
