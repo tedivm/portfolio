@@ -46,18 +46,25 @@
       homepage: https://tedivm.github.io/ec2details/
       icon: fab fa-aws
 
+
 - name: Multi-Py
   image: multipy.png
   description: <a href="https://github.com/multi-py">Multi-Py</a> is a collection of python images with amd64, arm64, and arm v7 support.
   projects:
+    - name: python-celery
+      description: Multiarchitecture Docker Containers for Python with Celery
+      homepage: https://blog.tedivm.com/open-source/2021/11/multi-py-multiplatform-images-python/
+      github: multi-py/python-celery
+      ghcr: multi-py/python-celery
+
     - name: python-uvicorn
-      description: Multiarchitecture Docker Containers for Python and Uvicorn
+      description: Multiarchitecture Docker Containers for Python with Uvicorn
       homepage: https://blog.tedivm.com/open-source/2021/11/multi-py-multiplatform-images-python/
       github: multi-py/python-uvicorn
       ghcr: multi-py/python-uvicorn
 
     - name: python-gunicorn
-      description: Multiarchitecture Docker Containers for Python and Gunicorn
+      description: Multiarchitecture Docker Containers for Python with Gunicorn
       homepage: https://blog.tedivm.com/open-source/2021/11/multi-py-multiplatform-images-python/
       github: multi-py/python-gunicorn
       ghcr: multi-py/python-gunicorn
@@ -69,7 +76,7 @@
       ghcr: multi-py/python-gunicorn-uvicorn
 
     - name: python-oso
-      description: Multiarchitecture Docker Containers for Python and OSO
+      description: Multiarchitecture Docker Containers for Python with OSO
       homepage: https://blog.tedivm.com/open-source/2021/11/multi-py-multiplatform-images-python/
       github: multi-py/python-oso
       ghcr: multi-py/python-oso
@@ -147,6 +154,31 @@
       description: Another really simple tool, the URLParser takes in various URIs and returns back the piece you're looking for; such as the scheme, domain, or port.
       github: tedivm/URLParser
       pypi: urlparser
+
+
+- name: Terraform
+  image: terraform.png
+  projects:
+
+    - name: terraform-aws-nat
+      description: This module launches a NAT Instance on AWS for cheap and efficient private subnet internet access.
+      github: terraform-aws-nat
+      homepage: https://registry.terraform.io/modules/tedivm/nat/aws/latest
+
+    - name: terraform-aws-dev-vpn
+      description: This module creates a user specific AWS VPN and drops an OpenVPN configuration file to the local system.
+      github: terraform-aws-dev-vpn
+      homepage: https://registry.terraform.io/modules/tedivm/dev-vpn/aws/latest
+
+    - name: terraform-aws-lambda
+      description: This module provides a variety of ways to deploy Lambda functions on AWS.
+      github: terraform-aws-lambda
+      homepage: https://registry.terraform.io/modules/tedivm/lambda/aws/latest
+
+    - name: terraform-general-cloudinit
+      description: This module is a wrapper around the cloudinit resource that exposes cloud config settings directly.
+      github: terraform-general-cloudinit
+      homepage: https://registry.terraform.io/modules/tedivm/general/aws/latest
 
 
 - name: Puppet
