@@ -1,4 +1,3 @@
-
 - name: Applications
   projects:
     - name: Nebula
@@ -23,7 +22,7 @@
       homepage: https://organizer.gitconsensus.com/
 
     - name: BadThings Slack Bot
-      description: "The <a href=\"https://twitter.com/badthingsdaily\">Bad Things Daily Twitter</a> account provides scenarios for tabletop disaster planning. This application sends random scenarios right to Slack."
+      description: 'The <a href="https://twitter.com/badthingsdaily">Bad Things Daily Twitter</a> account provides scenarios for tabletop disaster planning. This application sends random scenarios right to Slack.'
       github: tedivm/BadThingsDailyBot
       homepage: https://badthings.tedivm.com/
       image: badthings.jpg
@@ -35,7 +34,7 @@
       image: loan.png
 
     - name: GitStars
-      description: "A Github API aimed at Front End use. This API uses extensive caching and authenticated APIs to work around Github API Ratelimiting. It drives the <a href=\"https://gitbuttons.tedivm.com\">Github Star Badges</a> on this very site."
+      description: 'A Github API aimed at Front End use. This API uses extensive caching and authenticated APIs to work around Github API Ratelimiting. It drives the <a href="https://gitbuttons.tedivm.com">Github Star Badges</a> on this very site.'
       github: tedivm/gitstars
       homepage: https://stars.gitconsensus.com
       icon: fab fa-github-alt
@@ -45,7 +44,6 @@
       github: tedivm/ec2details
       homepage: https://tedivm.github.io/ec2details/
       icon: fab fa-aws
-
 
 - name: Multi-Py
   image: multipy.png
@@ -81,7 +79,6 @@
       github: multi-py/python-oso
       ghcr: multi-py/python-oso
 
-
 - name: Digital Art
   projects:
     - name: Game of Life
@@ -101,7 +98,6 @@
       github: tedivm/www.goodguywarren.com
       homepage: https://www.goodguywarren.com
       image: ggw.png
-
 
 - name: Libraries
   projects:
@@ -130,7 +126,6 @@
       packagist: tedivm/fetch
       icon: fab fa-php
 
-
 - name: CLIs
   icon: fas fa-terminal
   projects:
@@ -155,31 +150,28 @@
       github: tedivm/URLParser
       pypi: urlparser
 
-
 - name: Terraform
   image: terraform.png
   projects:
-
     - name: terraform-aws-nat
       description: This module launches a NAT Instance on AWS for cheap and efficient private subnet internet access.
-      github: terraform-aws-nat
+      github: tedivm/terraform-aws-nat
       homepage: https://registry.terraform.io/modules/tedivm/nat/aws/latest
 
     - name: terraform-aws-dev-vpn
       description: This module creates a user specific AWS VPN and drops an OpenVPN configuration file to the local system.
-      github: terraform-aws-dev-vpn
+      github: tedivm/terraform-aws-dev-vpn
       homepage: https://registry.terraform.io/modules/tedivm/dev-vpn/aws/latest
 
     - name: terraform-aws-lambda
       description: This module provides a variety of ways to deploy Lambda functions on AWS.
-      github: terraform-aws-lambda
+      github: tedivm/terraform-aws-lambda
       homepage: https://registry.terraform.io/modules/tedivm/lambda/aws/latest
 
     - name: terraform-general-cloudinit
       description: This module is a wrapper around the cloudinit resource that exposes cloud config settings directly.
-      github: terraform-general-cloudinit
+      github: tedivm/terraform-general-cloudinit
       homepage: https://registry.terraform.io/modules/tedivm/general/aws/latest
-
 
 - name: Puppet
   image: puppet.png
@@ -214,10 +206,8 @@
       puppet_forge: tedivm/iscsi
       github: tedivm/puppet-iscsi
 
-
 - name: Misc
   projects:
-
     - name: tedivms-flask
       description: This is my default Flask project template. It contains a complete docker environment, user management system, API system, Celery worker and tasks, and other important modules in addition to a Bootstrap based front end.
       github: tedivm/tedivms-flask
@@ -252,7 +242,6 @@
       github: tedivm/syntaxhighlighter_yaml
       wordpress: syntaxhighlighter-evolved-yaml-brush
       icon: fab fa-wordpress
-
 
 - name: Screeps
   description: <a href="https://screeps.com/" class="alert-link">Screeps</a> is an an open-source sandbox MMO RTS game for programmers, wherein the core mechanic is programming your units' AI.
