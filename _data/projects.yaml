@@ -83,9 +83,9 @@
   description: These tools were specifically designed to make development with Python easier.
   icon: fab fa-python
   projects:
-    - name: Awesome Python Template
+    - name: Rob's Awesome Python Template
       description: This is the complete CookieCutter template for Python that can be used for any project.
-      github: tedivm/tedivms_awesome_python_template
+      github: tedivm/robs_awesome_python_template
       icon: fab fa-python
 
     - name: tedivms-flask
@@ -144,6 +144,12 @@
       github: tedious/Fetch
       packagist: tedivm/fetch
       icon: fab fa-php
+
+    - name: QuasiQueue
+      description: A MultiProcessing library for Python that makes it super easy to have long running MultiProcess jobs.
+      github: tedious/quasiqueue
+      packagist: tedivm/quasiqueue
+      icon: fab fa-python
 
 - name: CLIs
   icon: fas fa-terminal
