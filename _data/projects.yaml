@@ -147,7 +147,7 @@
 
     - name: QuasiQueue
       description: A MultiProcessing library for Python that makes it super easy to have long running MultiProcess jobs.
-      github: tedious/quasiqueue
+      github: tedivm/quasiqueue
       packagist: tedivm/quasiqueue
       icon: fab fa-python
 
