@@ -203,9 +203,9 @@
       github: tedivm/terraform-general-cloudinit
       homepage: https://registry.terraform.io/modules/tedivm/general/aws/latest
 
-    - name: Terrapyst
+    - name: Terraformer
       description: A Python library for running Terraform programmatically, including plan review and advanced log processing.
-      github: aptible/terrapyst
+      github: tedivm/terraformer
 
 - name: Puppet
   image: puppet.png
