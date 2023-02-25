@@ -206,6 +206,7 @@
     - name: Terraformer
       description: A Python library for running Terraform programmatically, including plan review and advanced log processing.
       github: tedivm/terraformer
+      pypi: terraformer
 
 - name: Puppet
   image: puppet.png
