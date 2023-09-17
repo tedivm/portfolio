@@ -34,7 +34,7 @@
       image: loan.png
 
     - name: GitStars
-      description: 'A Github API aimed at Front End use. This API uses extensive caching and authenticated APIs to work around Github API Ratelimiting. It drives the <a href="https://gitbuttons.tedivm.com">Github Star Badges</a> on this very site.'
+      description: 'A Github API aimed at Front End use. This API uses extensive caching and authenticated APIs to work around Github API Ratelimiting. It drives the <a href="https://gitbuttons.tedivm.com">Github Star Badges</a> on my portfolio site.'
       github: tedivm/gitstars
       homepage: https://stars.gitconsensus.com
       icon: fab fa-github-alt
