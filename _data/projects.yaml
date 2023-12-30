@@ -98,6 +98,12 @@
       github: tedivm/action-python-lockfile-update
       icon: fab fa-github-alt
 
+    - name: Paracelsus
+      description: Generate Entity Relationship Diagrams in Mermaid or Dot format for SQLAlchemy Databases. 
+      github: tedivm/paracelsus
+      pypi: paracelsus
+      icon: fab fa-python
+
 - name: Digital Art
   projects:
     - name: Game of Life
