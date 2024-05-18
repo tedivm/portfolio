@@ -1,3 +1,20 @@
+- name: Project Templates
+  projects:
+    - name: Rob's Awesome Python Template
+      description: This is the complete CookieCutter template for Python that can be used for any project.
+      github: tedivm/robs_awesome_python_template
+      icon: fab fa-python
+
+    - name: Terraform Module Cookiecutter
+      description: This CookieCutter Template generates Terraform Modules with all the best practices and tools.
+      github: TerraformInDepth/terraform-module-cookiecutter
+      image: terraform.png
+
+    - name: tedivms-flask
+      description: This is my default Flask project template. It contains a complete docker environment, user management system, API system, Celery worker and tasks, and other important modules in addition to a Bootstrap based front end.
+      github: tedivm/tedivms-flask
+      icon: fas fa-flask
+
 - name: Applications
   projects:
     - name: Nebula
@@ -83,16 +100,6 @@
   description: These tools were specifically designed to make development with Python easier.
   icon: fab fa-python
   projects:
-    - name: Rob's Awesome Python Template
-      description: This is the complete CookieCutter template for Python that can be used for any project.
-      github: tedivm/robs_awesome_python_template
-      icon: fab fa-python
-
-    - name: tedivms-flask
-      description: This is my default Flask project template. It contains a complete docker environment, user management system, API system, Celery worker and tasks, and other important modules in addition to a Bootstrap based front end.
-      github: tedivm/tedivms-flask
-      icon: fas fa-flask
-
     - name: Python Lockfile Update
       description: A Github Action that uses pip-tools to update a project's requirements.txt files using a Pull Request.
       github: tedivm/action-python-lockfile-update
