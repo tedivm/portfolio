@@ -15,6 +15,39 @@
       github: tedivm/tedivms-flask
       icon: fas fa-flask
 
+- name: Favorites
+  projects:
+    - name: TofuPy
+      description: A Python library that makes it easy to build tools around OpenTofu and Terraform.
+      image: terraform.png
+      github: terraformindepth/tofupy
+      pypi: tofupy
+
+    - name: QuasiQueue
+      description: A MultiProcessing library for Python that makes it super easy to have long running MultiProcess jobs.
+      github: tedivm/quasiqueue
+      packagist: tedivm/quasiqueue
+      icon: fab fa-python
+
+    - name: Paracelsus
+      description: Generate Entity Relationship Diagrams in Mermaid or Dot format for SQLAlchemy Databases.
+      github: tedivm/paracelsus
+      pypi: paracelsus
+      icon: fab fa-python
+
+    - name: Stash
+      description: This caching library supports multiple backends with a consistent frontend. It supports hierarchical keys, stampede and dogpile protection, automatic miss distribution, and more.
+      github: tedious/Stash
+      documentation: https://www.stashphp.com/
+      packagist: tedivm/stash
+      icon: fab fa-php
+
+    - name: JShrink
+      description: This library minifies javascript using 100% pure PHP, allowing it to be integrated into applications with minimal work and maximum compatibility.
+      github: tedious/JShrink
+      packagist: tedivm/jshrink
+      icon: fab fa-php
+
 - name: Applications
   projects:
     - name: Nebula
@@ -105,12 +138,6 @@
       github: tedivm/action-python-lockfile-update
       icon: fab fa-github-alt
 
-    - name: Paracelsus
-      description: Generate Entity Relationship Diagrams in Mermaid or Dot format for SQLAlchemy Databases. 
-      github: tedivm/paracelsus
-      pypi: paracelsus
-      icon: fab fa-python
-
 - name: Digital Art
   projects:
     - name: Game of Life
@@ -133,19 +160,6 @@
 
 - name: Libraries
   projects:
-    - name: Stash
-      description: This caching library supports multiple backends with a consistent frontend. It supports hierarchical keys, stampede and dogpile protection, automatic miss distribution, and more.
-      github: tedious/Stash
-      documentation: https://www.stashphp.com/
-      packagist: tedivm/stash
-      icon: fab fa-php
-
-    - name: JShrink
-      description: This library minifies javascript using 100% pure PHP, allowing it to be integrated into applications with minimal work and maximum compatibility.
-      github: tedious/JShrink
-      packagist: tedivm/jshrink
-      icon: fab fa-php
-
     - name: github3apps.py
       description: This library is a wrapper around the <a href="https://github.com/sigmavirus24/github3.py">github3.py</a> library, giving it the ability to build GitHub Applications.
       github: tedivm/github3apps.py
@@ -157,12 +171,6 @@
       github: tedious/Fetch
       packagist: tedivm/fetch
       icon: fab fa-php
-
-    - name: QuasiQueue
-      description: A MultiProcessing library for Python that makes it super easy to have long running MultiProcess jobs.
-      github: tedivm/quasiqueue
-      packagist: tedivm/quasiqueue
-      icon: fab fa-python
 
 - name: CLIs
   icon: fas fa-terminal
@@ -196,6 +204,11 @@
 - name: Terraform
   image: terraform.png
   projects:
+    - name: terraform-mastodon-provider
+      description: A Terraform provider for posting to Mastodon servers.
+      github: terraformindepth/terraform-mastodon-provider
+      homepage: https://registry.terraform.io/providers/TerraformInDepth/mastodon/latest
+
     - name: terraform-aws-nat
       description: This module launches a NAT Instance on AWS for cheap and efficient private subnet internet access.
       github: tedivm/terraform-aws-nat
@@ -215,11 +228,6 @@
       description: This module is a wrapper around the cloudinit resource that exposes cloud config settings directly.
       github: tedivm/terraform-general-cloudinit
       homepage: https://registry.terraform.io/modules/tedivm/general/aws/latest
-
-    - name: Terraformer
-      description: A Python library for running Terraform programmatically, including plan review and advanced log processing.
-      github: tedivm/terraformer
-      pypi: terraformer
 
 - name: Puppet
   image: puppet.png
