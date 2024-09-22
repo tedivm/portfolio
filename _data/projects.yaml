@@ -206,7 +206,7 @@
   projects:
     - name: terraform-mastodon-provider
       description: A Terraform provider for posting to Mastodon servers.
-      github: terraformindepth/terraform-mastodon-provider
+      github: terraformindepth/terraform-provider-mastodon
       homepage: https://registry.terraform.io/providers/TerraformInDepth/mastodon/latest
 
     - name: terraform-aws-nat
