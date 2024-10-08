@@ -141,7 +141,7 @@
 - name: Digital Art
   projects:
     - name: Game of Life
-      description: "A Game of Life implimentation with additional rules and varients that add colors, written in javascript using canvas."
+      description: "A Conway's Game of Life implimentation with additional rules and variants that add colors, written in javascript using canvas."
       github: tedivm/game_of_life_populations
       homepage: https://life.tedivm.com
       image: game_of_life.png
@@ -151,6 +151,11 @@
       github: tedivm/formations
       homepage: https://formations.tedivm.com
       image: formations.png
+
+    - name: "Rob's Wall Clock"
+      description: "A hardware project building an internet enabled clock with a colorful variant of Conway's Game of Life as a background."
+      github: tedivm/robs_wall_clock
+      icon: fab fa-python
 
     - name: Good Guy Warren
       description: "An Elizabeth Warren Meme Collection. Memes are built using JS Canvas."
