@@ -95,6 +95,12 @@
       homepage: https://tedivm.github.io/ec2details/
       icon: fab fa-aws
 
+    - name: QR Stencil Creator
+      description: "A simple web application that lets users create QR codes that can be turned into stencils with a laser cutter or similar tool."
+      github: tedivm/qr_stencil_creator
+      homepage: https://qrcreator.tedivm.com/
+      image: qr_creator.svg
+
 - name: Multi-Py
   image: multipy.png
   description: <a href="https://github.com/multi-py">Multi-Py</a> is a collection of python images with amd64, arm64, and arm v7 support.
