@@ -144,6 +144,27 @@
       github: tedivm/action-python-lockfile-update
       icon: fab fa-github-alt
 
+- name: Libraries
+  projects:
+
+    - name: SkySnoop
+      description: A Python SDK and CLI for querying aircraft data from adsb.lol, a community-driven ADS-B aggregation service. 
+      github: tedivm/skysnoop
+      pypi: skysnoop
+      icon: fab fa-python
+    
+    - name: github3apps.py
+      description: This library is a wrapper around the <a href="https://github.com/sigmavirus24/github3.py">github3.py</a> library, giving it the ability to build GitHub Applications.
+      github: tedivm/github3apps.py
+      pypi: github3apps.py
+      icon: fab fa-github
+
+    - name: Fetch
+      description: This library wraps the native PHP IMAP libraries around a modern object orientated interface.
+      github: tedious/Fetch
+      packagist: tedivm/fetch
+      icon: fab fa-php
+
 - name: Digital Art
   projects:
     - name: Game of Life
@@ -162,26 +183,6 @@
       description: "A hardware project building an internet enabled clock with a colorful variant of Conway's Game of Life as a background."
       github: tedivm/robs_wall_clock
       icon: fab fa-python
-
-    - name: Good Guy Warren
-      description: "An Elizabeth Warren Meme Collection. Memes are built using JS Canvas."
-      github: tedivm/www.goodguywarren.com
-      homepage: https://www.goodguywarren.com
-      image: ggw.png
-
-- name: Libraries
-  projects:
-    - name: github3apps.py
-      description: This library is a wrapper around the <a href="https://github.com/sigmavirus24/github3.py">github3.py</a> library, giving it the ability to build GitHub Applications.
-      github: tedivm/github3apps.py
-      pypi: github3apps.py
-      icon: fab fa-github
-
-    - name: Fetch
-      description: This library wraps the native PHP IMAP libraries around a modern object orientated interface.
-      github: tedious/Fetch
-      packagist: tedivm/fetch
-      icon: fab fa-php
 
 - name: CLIs
   icon: fas fa-terminal
