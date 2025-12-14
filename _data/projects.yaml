@@ -187,6 +187,12 @@
 - name: CLIs
   icon: fas fa-terminal
   projects:
+
+    - name: GitBrag
+      description: This CLI generates Open Source Contribution reports for Github users.
+      github: tedivm/gitbrag
+      pypi: gitbrag
+    
     - name: GitConsensus CLI
       description: A standalone python application and library for managing Github PRs using Reactions as a voting mechanism.
       github: gitconsensus/GitConsensusCLI
