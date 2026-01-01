@@ -50,6 +50,25 @@
 
 - name: Applications
   projects:
+    - name: git brag
+      description: Highlight and Share Your Open Source Contributions using a web application or CLI.
+      github: tedivm/gitbrag
+      pypi: gitbrag
+      homepage: https://gitbrag.tedivm.com/
+      icon: fab fa-github-alt
+
+    - name: GitStars
+      description: 'A Github API aimed at Front End use. This API uses extensive caching and authenticated APIs to work around Github API Ratelimiting. It drives the <a href="https://gitbuttons.tedivm.com">Github Star Badges</a> on my portfolio site.'
+      github: tedivm/gitstars
+      homepage: https://stars.gitconsensus.com
+      icon: fab fa-github-alt
+
+    - name: QR Stencil Creator
+      description: "A simple web application that lets users create QR codes that can be turned into stencils with a laser cutter or similar tool."
+      github: tedivm/qr_stencil_creator
+      homepage: https://qrcreator.tedivm.com/
+      image: qr_creator.svg
+
     - name: Nebula
       description: "Nebula provides a simplified dashboard that allows researchers to launch and manage their own servers on AWS.\nIt also provides SSH Key management, scheduled shutdowns, group controls, and a variety of other features."
       documentation: https://github.com/tedivm/nebula/wiki
@@ -83,23 +102,12 @@
       homepage: https://www.leagueofautomatednations.com/
       image: loan.png
 
-    - name: GitStars
-      description: 'A Github API aimed at Front End use. This API uses extensive caching and authenticated APIs to work around Github API Ratelimiting. It drives the <a href="https://gitbuttons.tedivm.com">Github Star Badges</a> on my portfolio site.'
-      github: tedivm/gitstars
-      homepage: https://stars.gitconsensus.com
-      icon: fab fa-github-alt
-
     - name: ec2details
       description: "This service provides an API with metadata (including pricing) for every AWS EC2 instance type.\nIt processes the AWS Bulk API to multiple times a day to always provide the most up to date information."
       github: tedivm/ec2details
       homepage: https://tedivm.github.io/ec2details/
       icon: fab fa-aws
 
-    - name: QR Stencil Creator
-      description: "A simple web application that lets users create QR codes that can be turned into stencils with a laser cutter or similar tool."
-      github: tedivm/qr_stencil_creator
-      homepage: https://qrcreator.tedivm.com/
-      image: qr_creator.svg
 
 - name: Multi-Py
   image: multipy.png
@@ -187,11 +195,6 @@
 - name: CLIs
   icon: fas fa-terminal
   projects:
-
-    - name: GitBrag
-      description: This CLI generates Open Source Contribution reports for Github users.
-      github: tedivm/gitbrag
-      pypi: gitbrag
     
     - name: GitConsensus CLI
       description: A standalone python application and library for managing Github PRs using Reactions as a voting mechanism.
