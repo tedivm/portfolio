@@ -1,0 +1,12 @@
+[project]
+name = "portfolio"
+version = "1.0.0"
+description = "Robert Hafner's portfolio site"
+requires-python = ">=3.12"
+dependencies = [
+    "jinja2>=3.0",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+build = "generate:main"

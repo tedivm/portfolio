@@ -1,0 +1,11 @@
+- name: Writings
+  projects:
+    - name: Terraform in Depth
+      description: An in-depth guide to everything Terraform and OpenTofu. Covers Infrastructure as Code from the basics to advanced production uses, including modules, CI/CD, testing, and custom providers.
+      image: terraform-in-depth.jpg
+      homepage: http://mng.bz/QR21
+
+    - name: Beyond the Vibes
+      description: A rigorous guide to AI coding assistants and agents. Covers tools, practices, and guardrails for using AI in development without falling into the traps of vibe coding.
+      image: beyond-the-vibes.png
+      homepage: https://blog.tedivm.com/guides/2026/03/beyond-the-vibes-coding-assistants-and-agents/

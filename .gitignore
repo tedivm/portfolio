@@ -1,9 +1,6 @@
 _site
-.sass-cache
-.jekyll-metadata
-node_modules
-package-lock.json
-Gemfile.lock
-vendor
-bin
-.bundle
+__pycache__
+*.pyc
+.venv
+.uv/
+.ruff_cache/

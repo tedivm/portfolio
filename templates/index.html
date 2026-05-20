@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Hafner's Projects</title>
+    <meta name="description" content="Selected Writings and Open Source Projects by Robert Hafner (tedivm)">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://gitbuttons.tedivm.com/buttons.js" integrity="sha384-dl0n4CP/gJsA31+mtSe2Gc0FbNR6oq2Ox4HHwEq6LTiZEPRMTzj87lXYl2l/w+KQ" crossorigin="anonymous"></script>
+    <!-- Fathom Analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="OEFMF" data-domain="fathom.tdvm.net" defer></script>
+    <!-- Plausible Analytics -->
+    <script defer data-domain="projects.tedivm.com" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Robert Hafner's Projects</h1>
+        <p class="subtitle">Selected Writings and Open Source Projects</p>
+        <p class="blog-link"><a href="https://blog.tedivm.com">Also check out my blog</a></p>
+        <nav class="social-links">
+            <a href="https://github.com/tedivm" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://bsky.app/profile/tedivm.com" title="Bluesky"><i class="fab fa-bluesky"></i></a>
+            <a href="https://hachyderm.io/@tedivm" title="Mastodon"><i class="fab fa-mastodon"></i></a>
+            <a href="https://www.linkedin.com/in/roberthafner" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://blog.tedivm.com" title="Blog"><i class="fas fa-blog"></i></a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        {% for category in writings %}
+        <section class="category">
+            <div class="category-header">
+                <h2>
+                    {{ category.name }}
+                </h2>
+                {% if category.description %}
+                <p class="category-description">{{ category.description | safe }}</p>
+                {% endif %}
+            </div>
+            <div class="projects-grid">
+                {% for project in category.projects %}
+                <article class="project-card">
+                    {% if project.image %}
+                    <div class="project-icon">
+                        <img src="{{ image_path(project) }}" alt="{{ project.name }}">
+                    </div>
+                    {% endif %}
+                    <h3>
+                        {% if project.homepage %}
+                        <a href="{{ project.homepage }}">{{ project.name }}</a>
+                        {% else %}
+                        {{ project.name }}
+                        {% endif %}
+                    </h3>
+                    <p class="project-description">{{ project.description | safe }}</p>
+                    <div class="project-links">
+                        {% if project.homepage %}
+                        <a class="btn btn-sm btn-tertiary" href="{{ project.homepage }}">
+                            <i class="fas fa-home"></i> Homepage
+                        </a>
+                        {% endif %}
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+        {% for category in projects %}
+        <section class="category">
+            <div class="category-header">
+                <h2>
+                    {% if category.icon %}<i class="{{ category.icon }}"></i>{% endif %}
+                    {{ category.name }}
+                </h2>
+                {% if category.description %}
+                <p class="category-description">{{ category.description | safe }}</p>
+                {% endif %}
+            </div>
+            <div class="projects-grid">
+                {% for project in category.projects %}
+                <article class="project-card">
+                    {% if project.image %}
+                    <div class="project-icon">
+                        <img src="{{ image_path(project) }}" alt="{{ project.name }}">
+                    </div>
+                    {% elif category.image %}
+                    <div class="project-icon">
+                        <img src="/assets/images/projects/{{ category.image }}" alt="{{ category.name }}">
+                    </div>
+                    {% elif project.icon %}
+                    <div class="project-icon">
+                        <i class="{{ project.icon }}"></i>
+                    </div>
+                    {% elif category.icon %}
+                    <div class="project-icon">
+                        <i class="{{ category.icon }}"></i>
+                    </div>
+                    {% endif %}
+                    <h3>
+                        {% if project.github %}
+                        <a href="https://github.com/{{ project.github }}">{{ project.name }}</a>
+                        {% else %}
+                        {{ project.name }}
+                        {% endif %}
+                    </h3>
+                    {% if project.github %}
+                    <a class="github-button" href="https://github.com/{{ project.github }}" data-show-count="true" aria-label="Star {{ project.name }} on GitHub">Star</a>
+                    {% endif %}
+                    <p class="project-description">{{ project.description | safe }}</p>
+                    <div class="project-links">
+                        {% if project.github %}
+                        <a class="btn btn-sm btn-primary" href="https://github.com/{{ project.github }}">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        {% endif %}
+                        {% if project.pypi %}
+                        <a class="btn btn-sm btn-secondary" href="https://pypi.org/project/{{ project.pypi }}">
+                            <i class="fab fa-python"></i> PyPI
+                        </a>
+                        {% endif %}
+                        {% if project.packagist %}
+                        <a class="btn btn-sm btn-secondary" href="https://packagist.org/packages/{{ project.packagist }}">
+                            <i class="fab fa-php"></i> Packagist
+                        </a>
+                        {% endif %}
+                        {% if project.npm %}
+                        <a class="btn btn-sm btn-secondary" href="https://www.npmjs.com/package/{{ project.npm }}">
+                            <i class="fab fa-node-js"></i> npm
+                        </a>
+                        {% endif %}
+                        {% if project.dockerhub %}
+                        <a class="btn btn-sm btn-secondary" href="https://hub.docker.com/r/{{ project.dockerhub }}">
+                            <i class="fab fa-docker"></i> Docker Hub
+                        </a>
+                        {% endif %}
+                        {% if project.ghcr %}
+                        <a class="btn btn-sm btn-secondary" href="https://ghcr.io/{{ project.ghcr }}">
+                            <i class="fab fa-github"></i> GHCR
+                        </a>
+                        {% endif %}
+                        {% if project.puppet_forge %}
+                        <a class="btn btn-sm btn-secondary" href="https://forge.puppet.com/{{ project.puppet_forge }}">
+                            <i class="fas fa-cog"></i> Puppet Forge
+                        </a>
+                        {% endif %}
+                        {% if project.rubygems %}
+                        <a class="btn btn-sm btn-secondary" href="https://rubygems.org/gems/{{ project.rubygems }}">
+                            <i class="fas fa-gem"></i> RubyGems
+                        </a>
+                        {% endif %}
+                        {% if project.wordpress %}
+                        <a class="btn btn-sm btn-secondary" href="https://wordpress.org/plugins/{{ project.wordpress }}">
+                            <i class="fab fa-wordpress"></i> WordPress
+                        </a>
+                        {% endif %}
+                        {% if project.homepage %}
+                        <a class="btn btn-sm btn-tertiary" href="{{ project.homepage }}">
+                            <i class="fas fa-home"></i> Homepage
+                        </a>
+                        {% endif %}
+                        {% if project.documentation %}
+                        <a class="btn btn-sm btn-tertiary" href="{{ project.documentation }}">
+                            <i class="fas fa-book"></i> Docs
+                        </a>
+                        {% endif %}
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+    </main>
+
+    <footer>
+        <p>&copy; {{ year }} Robert Hafner</p>
+    </footer>
+</body>
+</html>
