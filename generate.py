@@ -75,10 +75,15 @@ def copy_assets():
 
 def main():
     """Main build function."""
-    # Clean output directory
+    # Clean output directory contents, keep directory intact for Docker mounts
     if OUTPUT_DIR.exists():
-        shutil.rmtree(OUTPUT_DIR)
-    ensure_dir(OUTPUT_DIR)
+        for item in OUTPUT_DIR.iterdir():
+            if item.is_dir():
+                shutil.rmtree(item)
+            else:
+                item.unlink()
+    else:
+        ensure_dir(OUTPUT_DIR)
 
     # Load data
     projects = load_projects()

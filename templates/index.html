@@ -15,6 +15,24 @@
       window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
       plausible.init()
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var toggle = document.getElementById('theme-toggle');
+        var isLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        function updateToggle() {
+          toggle.innerHTML = '<i class="fas fa-' + (isLight ? 'moon' : 'sun') + '"></i> <span class="sr-only">' + (isLight ? 'Toggle Dark Mode' : 'Toggle Light Mode') + '</span>';
+        }
+        if (isLight) {
+          document.documentElement.classList.add('light');
+        }
+        updateToggle();
+        toggle.addEventListener('click', function() {
+          isLight = !isLight;
+          document.documentElement.classList.toggle('light', isLight);
+          updateToggle();
+        });
+      });
+    </script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -30,6 +48,9 @@
             <a href="https://www.linkedin.com/in/roberthafner" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             <a href="https://blog.tedivm.com" title="Blog"><i class="fas fa-blog"></i></a>
         </nav>
+        <div class="theme-toggle">
+            <button id="theme-toggle" class="btn btn-subtle btn-sm"><i class="fas fa-sun"></i> <span class="sr-only">Toggle Light Mode</span></button>
+        </div>
     </header>
 
     <main id="main-content">
@@ -61,7 +82,7 @@
                     <p class="project-description">{{ project.description | safe }}</p>
                     <div class="project-links">
                         {% if project.homepage %}
-                        <a class="btn btn-sm btn-tertiary" href="{{ project.homepage }}">
+                        <a class="btn btn-sm btn-primary" href="{{ project.homepage }}">
                             <i class="fas fa-home"></i> Homepage
                         </a>
                         {% endif %}
@@ -115,7 +136,7 @@
                     <p class="project-description">{{ project.description | safe }}</p>
                     <div class="project-links">
                         {% if project.github %}
-                        <a class="btn btn-sm btn-primary" href="https://github.com/{{ project.github }}">
+                        <a class="btn btn-sm btn-tertiary" href="https://github.com/{{ project.github }}">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                         {% endif %}
@@ -160,12 +181,12 @@
                         </a>
                         {% endif %}
                         {% if project.homepage %}
-                        <a class="btn btn-sm btn-tertiary" href="{{ project.homepage }}">
+                        <a class="btn btn-sm btn-primary" href="{{ project.homepage }}">
                             <i class="fas fa-home"></i> Homepage
                         </a>
                         {% endif %}
                         {% if project.documentation %}
-                        <a class="btn btn-sm btn-tertiary" href="{{ project.documentation }}">
+                        <a class="btn btn-sm btn-primary" href="{{ project.documentation }}">
                             <i class="fas fa-book"></i> Docs
                         </a>
                         {% endif %}

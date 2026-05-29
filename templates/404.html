@@ -13,6 +13,27 @@
         <p><strong>Page not found :(</strong></p>
         <p>The requested page could not be found.</p>
         <p><a href="/"><i class="fas fa-home"></i> Back to home</a></p>
+        <div class="theme-toggle" style="margin-top: 1.5rem;">
+            <button id="theme-toggle" class="btn btn-subtle btn-sm"><i class="fas fa-sun"></i> <span class="sr-only">Toggle Light Mode</span></button>
+        </div>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var toggle = document.getElementById('theme-toggle');
+        var isLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        function updateToggle() {
+          toggle.innerHTML = '<i class="fas fa-' + (isLight ? 'moon' : 'sun') + '"></i> <span class="sr-only">' + (isLight ? 'Toggle Dark Mode' : 'Toggle Light Mode') + '</span>';
+        }
+        if (isLight) {
+          document.documentElement.classList.add('light');
+        }
+        updateToggle();
+        toggle.addEventListener('click', function() {
+          isLight = !isLight;
+          document.documentElement.classList.toggle('light', isLight);
+          updateToggle();
+        });
+      });
+    </script>
 </body>
 </html>
